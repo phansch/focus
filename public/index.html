@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/focus.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -13,11 +14,12 @@
     <![endif]-->
   </head>
   <body>
+
     <div class="container">
-      <div class="col-lg-6">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <div id="time"></div>
         <h1>What is your main focus for today?</h1>
-        <input type="text" id="todo" class="form-control" />
-        <button type="button" onclick="addTodo(); return false;">Add Item</button>
+        <input type="text" id="todo" class="task-control" placeholder="A task you want to work on." /><br />
         <ul id="todoItems">
 
         </ul>
@@ -25,8 +27,16 @@
         <script src="https://code.jquery.com/jquery.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="js/focus_db.js"></script>
+        <script src="js/focus_time.js"></script>
         <script src="js/focus.js"></script>
+
       </div>
+    </div>
+    <div class="container" id="footer">
+      <small>
+        There is a chrome extension that served as my inspiration. I sadly can't remember the name of it. Otherwise I would have put its name here. Contact me on <a href="http://twitter.com/phansch">Twitter</a>.
+      </small>
     </div>
   </body>
 </html>
