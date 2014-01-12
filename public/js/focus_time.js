@@ -22,5 +22,5 @@ focusApp.updateTime = function() {
 
   setInterval(function() {
     setTime();
-  }, 1000 * 60);
+  }, 1000);
 };
